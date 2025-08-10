@@ -53,21 +53,21 @@
 }
 body {
   margin: 0;
-  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
-  background-color: #181818;
-  color: #2a235d;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: #0b0f19;
+  color: #e5e7eb;
   letter-spacing: 0.01em;
-  line-height: 1.6;
+  line-height: 1.7;
   transition: background 0.3s, color 0.3s;
 }
 
 h2 {
-  color: #265585;
+  color: #c7d2fe;
   margin-bottom: 14px;
   font-size: 2.2rem;
   font-weight: 700;
   letter-spacing: 0.02em;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  text-shadow: 0 6px 24px rgba(59, 130, 246, 0.18);
 }
 
 ul {
@@ -77,15 +77,15 @@ ul {
 
 
 a {
-  color: #60a5fa;
+  color: #93c5fd;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   transition: color 0.2s;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #93c5fd;
+  color: #bfdbfe;
 }
 
 .app-background {
@@ -103,24 +103,72 @@ a:hover {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
-  background-image: url('/public/assets/ai_bg.jpg');
-  background-size: cover;
-  background-position: center;
+  z-index: -3;
+  background: radial-gradient(1000px 600px at 20% 10%, rgba(37, 99, 235, 0.15), transparent 60%),
+              radial-gradient(800px 500px at 80% 20%, rgba(139, 92, 246, 0.12), transparent 60%),
+              radial-gradient(900px 600px at 50% 100%, rgba(16, 185, 129, 0.10), transparent 60%),
+              #0b0f19;
   background-attachment: fixed;
-  filter: brightness(0.);
-  transition: filter 0.4s, background-image 0.4s;
+  transition: opacity 0.4s;
 }
 
 /* Add card-like section styling */
 .section-card {
-  background: rgba(24,24,24,0.98);
+  background: rgba(10, 12, 20, 0.86);
+  border: 1px solid rgba(99, 102, 241, 0.14);
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  box-shadow: 0 10px 50px rgba(0,0,0,0.35);
   margin: 32px auto;
   padding: 32px 28px;
-  max-width: 800px;
-  transition: background 0.3s;
+  max-width: 920px;
+  backdrop-filter: blur(6px);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.section-card:hover {
+  transform: translateY(-2px);
+}
+
+.contact-form {
+  text-align: left;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-form .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.9rem;
+  color: #a5b4fc;
+  margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid rgba(99,102,241,0.25);
+  background: rgba(17,24,39,0.6);
+  color: #e5e7eb;
+  padding: 12px 14px;
+  outline: none;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.15);
+}
+
+.contact-form textarea {
+  resize: vertical;
 }
 
 /* Toggle button removed */

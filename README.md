@@ -1,4 +1,16 @@
 # Getting Started with Create React App
+## EmailJS Setup
+
+Create a `.env` file in the project root with:
+
+```
+REACT_APP_EMAILJS_SERVICE_ID=your_service_id
+REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id
+REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Then in EmailJS dashboard, ensure template fields accept `from_name`, `reply_to`, `subject`, and `message`.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

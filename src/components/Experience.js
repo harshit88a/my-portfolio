@@ -2,19 +2,19 @@ import React from 'react';
 
 function Experience() {
   return (
-    <section style={{ padding: '20px', backgroundColor: 'rgba(255, 255, 255, 0.8)' }}>
+    <div>
       <h2>Experience</h2>
-      <ul>
-        <li>
-          <strong>Software Engineer at Ford Motors</strong><br />
-          Developed automation tools and internal chatbots; contributed to cloud infrastructure setup.
+      <ul style={{ margin: 0, padding: 0 }}>
+        <li style={{ marginBottom: 12 }}>
+          <strong style={{ color: '#c7d2fe' }}>Software Engineer — Ford Motors</strong><br />
+          <span style={{ color: '#cbd5e1' }}>Built automation tools and internal chatbots; contributed to cloud infrastructure setup.</span>
         </li>
         <li>
-          <strong>Product Development Intern at Cemtech</strong><br />
-          Built a Language Learning App using react-native, leveraging AWS and GCP APIs for multilingual capabilities.
+          <strong style={{ color: '#c7d2fe' }}>Product Development Intern — Cemtech</strong><br />
+          <span style={{ color: '#cbd5e1' }}>Developed a language learning app with React Native, integrating AWS and GCP APIs.</span>
         </li>
       </ul>
-    </section>
+    </div>
   );
 }
 
